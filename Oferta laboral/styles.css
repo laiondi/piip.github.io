@@ -1,0 +1,575 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body, html {
+    /* background-color: #000b1b; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif;   
+}
+
+/* BACKGROUND IMAGEN INICIAL */
+
+.background-section {
+    background-image: url('piip.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    animation: increaseBrightness 2s ease-in-out forwards;
+    
+}
+
+@keyframes increaseBrightness {
+    from {
+        filter: brightness(1%);
+    }
+    to {
+        filter: brightness(100%);
+    }
+}
+
+.container {
+    min-height: 100%;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* background-color: #ffffff; */
+    padding: 20px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 35px;
+    /* opacity: 55%; */
+}
+
+/* Efecto de hover */
+.logo img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del ícono al 110% en el hover */
+}
+
+.nav-links {
+    flex-grow: 1; /* Añadido para ocupar todo el espacio restante */
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centramos los elementos en el eje horizontal */
+}
+
+.nav-links ul li {
+    margin: 0 20px; /* Espacio entre los elementos de la lista */
+    /* opacity: 55%; */
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: rgb(0, 58, 146);
+    text-decoration: none;
+    /* font-size: 14px; */
+}
+
+/* iconos redes header*/
+.social-links {
+    display: flex;
+    align-items: center;
+    /* opacity: 55%; */
+}
+
+.social-icon {
+    margin-right: 10px;
+    transition: transform 0.3s ease; /* Agrega una transición suave para el efecto de hover */
+}
+
+
+.social-icon:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del ícono al 110% en el hover */
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu.active .line:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 6px;
+}
+
+.hamburger-menu.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .line:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -6px;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+}
+
+/* tarjetas */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px; /* Padding opcional para separación del borde */
+    margin-top: 150px;
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 150px;
+    color: #7B95B5;
+    
+}
+
+
+.card {
+    width: calc(20% - 20px); /* Calcula el ancho para 5 tarjetas por línea, menos el espacio entre ellas */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Espacio opcional entre filas */
+}
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000b1b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0d963b;
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: calc(25% - 20px); /* Calcula el ancho para 4 tarjetas por línea en tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(33.33% - 20px); /* Calcula el ancho para 3 tarjetas por línea en dispositivos móviles grandes */
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: calc(50% - 20px); /* Calcula el ancho para 2 tarjetas por línea en dispositivos móviles pequeños */
+    }
+}
+
+
+/* IMAGEN PRE-FOOTER */
+
+.full-width {
+    width: 100%;
+    height: auto;
+    margin-bottom: -20px; /* Ajusta este valor según sea necesario */
+}
+
+/* SECCION MAPA */
+
+#map {
+    width: 100%vh;
+    height: 100%px;    
+}
+
+#framemap {
+    width: 100%;
+    height:300px;
+}
+
+        /* SECCION RADICACION footer */
+        @keyframes latido {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+      
+        .radicacion-button2 {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #ffffff;
+            background-color: #123c7c; /* Color del botón */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            width: 150px;
+            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+            animation: latido 1.5s infinite; /* Añadir animación de latido */
+        }
+        
+        .radicacion-button2:hover {
+            background-color:  #76B82A; /* Color del botón al pasar el ratón */
+        }
+        
+        @keyframes latido {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+/* FOOTER */
+
+footer {
+    background: #010010;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.footer-divider {
+    border-bottom: 1px solid #fff;
+    margin: 20px 0;
+}
+
+.footer-columns {
+    display:flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-bottom: 20px;
+    gap: 50px;
+}
+
+.footer-columns div {
+    max-width: 500px;
+    
+}
+
+.footer-columns div h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-columns div p {
+    margin-bottom: 5px;
+    line-height: 1.6;
+}
+
+.footer-center {
+    margin-bottom: 20px;
+}
+
+.footer-center h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-center p {
+    margin-bottom: 10px;
+}
+
+.footer-center button {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 3px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.footer-center button:hover {
+    background:  #76B82A;
+    color: rgb(255, 255, 255);
+}
+
+.footer-contact {
+    margin-bottom: 20px;
+}
+
+.footer-contact p {
+    margin-bottom: 5px;
+    line-height: 1.6;
+}
+
+.footer-contact a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-icons {
+    margin: 20px 0;
+}
+
+.footer-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    
+}
+
+.footer-icons a span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.footer-icons a:hover span {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    margin-bottom: 90px;
+    
+}
+
+.footer-bottom a {
+    text-decoration: none; /* Quita la decoración subrayada */
+    color: inherit; /* Mantiene el color original del texto */
+   
+}
+
+.prov-icon img {
+    margin-top: 50px;
+    transition: transform 0.5s ease-in-out; /* Transición más larga y con easing más pronunciado */    
+    
+}
+
+.prov-icon img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del ícono al 110% en el hover */
+}
+
+/* BOTON VOLVER A SUBIR */
+
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#back-to-top-btn:hover {
+    background-color: #0056b3;
+}
+
+#back-to-top-btn:active {
+    transform: scale(0.95);
+}
+
+/* BOTON DE WHATSAPP */
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-button img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* AJUSTES RESPONSIVE */
+
+
+/* PANTALLA A 768 */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #000b1b;
+        width: 100%;
+        text-align: center;
+        opacity: 55%;
+    }
+
+    .nav-links ul {
+        display: block;
+    }
+
+    .nav-links ul li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .nav-links a {
+        color: #fff; /* Cambiar el color de las palabras aquí */
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    } 
+}
+
+@media (max-width: 768px) {
+    .social-links {
+        flex-direction: row; /* Cambia la dirección de flexión a horizontal */
+        justify-content: center; /* Centra los íconos horizontalmente */
+    }
+
+    .social-icon {
+        margin-right: 10px; /* Agrega un margen derecho entre los íconos */
+        margin-bottom: 0; /* Elimina el margen inferior */
+    }
+
+    .social-icon:last-child {
+        margin-right: 0; /* Elimina el margen derecho del último ícono */
+    }
+}
+@media (max-width: 768px) {
+    .section .content {
+        padding: 0 20px;
+    }
+}
+@media (max-width: 768px) {
+   
+   
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    
+}
+
+
+
+
+/* PANTALLA 430 */
+@media (max-width: 430px) {
+    .social-links {
+        display: none; /* Oculta los iconos de redes sociales */
+    }
+    
+     
+}
+
+
+    
+@media (min-width: 350px) and (max-width: 375px) {
+
+    .logo-container img {
+        width: 300px;
+    }
+
+}
+/* Media query para ocultar los íconos de redes sociales a partir de 820px */
+@media (min-width: 769px) and (max-width: 907px) {
+    .social-links {
+        display: none;
+    }
+}
+@media (min-width: 432px) and (max-width: 768px) {
+    .social-links {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
