@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque Industrial y de la Innovación Posadas</title>
+    <!-- scripts -->
+    <link rel="stylesheet" href="styles.css">    
+    <!-- tipografia -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <!-- favico -->
+    <link rel="icon" href="favico.png" type="image/x-icon">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- sem -->
+    <meta name="description" content="Descubre el Parque Industrial y de la Innovación Posadas en Posadas, Misiones. Encuentra tu espacio ideal para empresas con beneficios económicos, logísticos y sostenibles. ¡Radicación fácil y accesible en un entorno estratégico!">
+    <meta name="keywords" content="Parque Industrial Posadas, Parque de Innovación, radicación empresas, desarrollo sostenible, economía sustentable, PIIP, Misiones, Argentina">
+     <!-- Open Graph Meta Tags -->
+     <meta property="og:title" content="Parque Industrial y de la Innovación Posadas">
+     <meta property="og:description" content="Descubre el Parque Industrial y de la Innovación Posadas en Posadas, Misiones. Encuentra tu espacio ideal para empresas con beneficios económicos, logísticos y sostenibles. ¡Radicación fácil y accesible en un entorno estratégico!">
+     <meta property="og:image" content="https://example.com/image.jpg">
+     <meta property="og:url" content="https://example.com">
+     <!-- Twitter Card Meta Tags -->
+     <meta name="twitter:title" content="Parque Industrial y de la Innovación Posadas">
+     <meta name="twitter:description" content="Descubre el Parque Industrial y de la Innovación Posadas en Posadas, Misiones. Encuentra tu espacio ideal para empresas con beneficios económicos, logísticos y sostenibles. ¡Radicación fácil y accesible en un entorno estratégico!">
+     <meta name="twitter:image" content="https://example.com/image.jpg">
+     <meta name="twitter:card" content="summary_large_image">
+    <!-- imagen 360 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header>
+       
+        <a href="#mapa" class="logo" data-aos="fade-up">
+            <img src="logo.webp" alt="Logo del Parque Industrial y de la Innnovación Posadas">
+        </a>
+
+        <nav class="nav-links" data-aos="fade-up">
+            <ul>
+                <li><a href="#home">EL PARQUE</a></li>
+                <li><a href="autoridades/autoridades.html" target="_blank">AUTORIDADES</a></li>
+                <li><a href="Radicacion/radicacion.html" target="_blank">RADICACIÓN</a></li>
+                <li><a href="parque360/parque360.html" target="_blank">PARQUE 360</a></li>
+                <li><a href="proyectos/proyectos.html" target="_blank">PROYECTOS PIIP</a></li>
+                <li><a href="#contact">CONTACTO</a></li>
+                
+            </ul>
+        </nav>
+
+        <div class="social-links" data-aos="fade-up">
+            <a href="https://www.facebook.com/PIIPmisiones/" target="_blank" class="social-icon"><img src="efe.webp" alt="Facebook del Parque Industrial y de la Innnovación Posadas "></a>
+            <a href="https://x.com/PIIPmisiones" target="_blank" class="social-icon"><img src="equis.webp" alt="Twitter X del Parque Industrial y de la Innnovación Posadas"></a>
+            <a href="https://www.linkedin.com/company/piipmisiones/mycompany/" target="_blank" class="social-icon"><img src="ln.webp" alt="Linkedin del Parque Industrial y de la Innnovación Posadas"></a>
+        </div>
+
+        <div class="hamburger-menu" id="hamburger-menu" data-aos="fade-up">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+    </header>        
+        
+    <!-- POP UP -->
+    
+    <div id="popup" class="popup" >
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>¿BUSCAS UNA LOCALIZACIÓN ESTRATÉGICA PARA TU EMPRESA?</h2>
+        <p>Descubre el lugar ideal para tu empresa en el Parque Industrial y de la Innovación Posadas</p>
+        <button onclick="goToPage()">¡HAZLO AHORA!</button>
+    </div>
+    </div>
+   
+    <!-- BACKGROUND INICIO -->
+
+    <section class="background-section"  >  
+        <section class="main-section"><!-- TIPEO -->
+            <div class="typing-title-container">
+                <h1 id="typing-title"></h1>
+            </div>
+
+             <!-- CONTADOR -->
+        <div class="counter-container" style="display: none;" >
+            <span id="company-counter">0</span>
+            <p>Empresas Radicadas</p>
+        </div>
+
+        </section>        
+    </section>  
+    
+    <!-- SECCION RADICACION -->
+
+    <section id="radicacion" class="radicacion-section" data-aos="fade-up" >
+        <h2>Radicación</h2>
+        <p>¡Únete a la revolución!</p>
+        <a href="Radicacion/radicacion.html" class="radicacion-button" target="_blank">Radicate</a>
+    </section>
+    
+    <!-- SLIDER INFINITO DE LOGOS -->
+
+    <div class="container" data-aos="fade-up">
+        <div class="page-section">
+            <div class="centered-container">
+                <div class="brand-container">
+                    <div class="brand-slider">
+                        <div class="brand-track">
+                            <!-- Marcas duplicadas para un desplazamiento continuo -->
+                            <img src="1.webp" alt="Plastimi">
+                            <img src="2.webp" alt="Duomo">
+                            <img src="3.webp" alt="Macoma">
+                            <img src="4.webp" alt="Lug">
+                            <img src="5.webp" alt="Faniot">
+                            <img src="6.webp" alt="Dpv">
+                            <img src="7.webp" alt="Med industrial">
+                            <img src="8.webp" alt="Terekua">
+                            <img src="9.webp" alt="Perfiles del litoral srl">
+                            <img src="10.webp" alt="Futuro verde">
+                            <img src="11.webp" alt="Intacto welty">
+                            <img src="12.webp" alt="Agro sustentable">
+                            <img src="13.webp" alt="Expreso jet">
+                            <img src="14.webp" alt="Solar gafas">
+                            <img src="15.webp" alt="Dignos">
+                            <img src="16.webp" alt="Apicofom ute">
+                            <img src="17.webp" alt="Fontana reciclado">
+                            <img src="18.webp" alt="Deposito provincial de vacunas">
+                            <img src="19.webp" alt="Inti">
+                            <img src="20.webp" alt="Isla home">
+                            <img src="21.webp" alt="Glupita">
+                            
+                          
+                            <!-- Repetir las marcas para un bucle infinito -->
+                            <img src="1.webp" alt="Plastimi">
+                            <img src="2.webp" alt="Duomo">
+                            <img src="3.webp" alt="Macoma">
+                            <img src="4.webp" alt="Lug">
+                            <img src="5.webp" alt="Faniot">
+                            <img src="6.webp" alt="Dpv">
+                            <img src="7.webp" alt="Med industrial">
+                            <img src="8.webp" alt="Terekua">
+                            <img src="9.webp" alt="Perfiles del litoral srl">
+                            <img src="10.webp" alt="Futuro verde">
+                            <img src="11.webp" alt="Intacto welty">
+                            <img src="12.webp" alt="Agro sustentable">
+                            <img src="13.webp" alt="Expreso jet">
+                            <img src="14.webp" alt="Solar gafas">
+                            <img src="15.webp" alt="Dignos">
+                            <img src="16.webp" alt="Apicofom ute">
+                            <img src="17.webp" alt="Fontana reciclado">
+                            <img src="18.webp" alt="Deposito provincial de vacunas">
+                            <img src="19.webp" alt="Inti">
+                            <img src="20.webp" alt="Isla home">
+                            <img src="21.webp" alt="Glupita">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- boton empresas -->
+        
+        <div class="button-container">
+            <a href="empresas/index.html" class="empresas-button" target="_blank">+Empresas</a>          
+        </div>
+    </div>
+
+    <!-- SECCION TEXTO COLUMNAS -->  
+
+    <section id="home"  class="wrapper">  
+     
+        <div class="titcol" >
+        <h1 data-aos="fade-up">Parque Industrial y de la Innovación de Posadas (PIIP)</h1>
+        <p data-aos="fade-up"> El Parque Industrial y de la Innovación de Posadas 
+            (PIIP) es un espacio destinado a promover el desarrollo 
+            de actividades productivas con generación de empleo 
+            genuino, apostando a un cambio de la matriz productiva, 
+            basado en la innovación y la industria del conocimiento, 
+            la economía sustentable y la competitividad empresarial. 
+            Estamos en la ciudad de Posadas, Paraje Nemesio Parma. 
+            En la confluencia del arroyo Apepú y el Río Paraná lindante 
+            al predio del nuevo puerto conformando la denominada Plataforma 
+            Logística Productiva. Posee una superficie de 112 hectáreas, 
+            accesible desde la Ruta Nacional 12 a través de una avenida 
+            asfaltada de 7 km de recorrido. El PIIP se encuentra inscripto 
+            en el Registro Nacional de Parques Industriales del Ministerio 
+            de Producción de la Nación. Nº de Registro 20130080. 
+            También integra la Federación Argentina de Parques Industriales, 
+            dependiente de la Confederación Argentina de la Mediana Empresa (CAME)</p>
+            
+            <div class="titcol2" data-aos="fade-up">
+                    <h1>Beneficios de radicarte:</h1>
+            </div>
+                         
+        </div>    
+        
+       <div class="column" data-aos="fade-up">
+        <h2>Beneficios logísticos y administrativos</h2>
+        <ul>
+            <li>Garita de acceso y salida</li>
+            <li>Predio con cerramiento perimetral</li>
+            <li>Red de agua, cloacas e instalaciones contra incendio</li>
+            <li>Calles asfaltadas con Iluminación LED</li>
+            <li>Accesibilidad al Puerto de Posadas</li>
+            <li>Acceso a líneas de colectivo</li>
+        </ul>
+        </div>
+
+        <div class="column" data-aos="fade-up">
+        <h2>Beneficios económicos</h2>
+        <ul>
+            <li>Acceso a lotes en comodato</li>
+        </ul>
+        </div>
+
+        <div class="column" data-aos="fade-up">
+        <h2>Servicios e instalaciones</h2>
+        <ul>
+            <li>Mantenimiento de áreas comunes</li>
+            <li>Zona de WIFI libre</li>
+            <li>Sala de reuniones y videoconferencias</li>
+            <li>Buffet</li>
+            <li>Incubadora de emprendedores dentro del Parque: Proyectate</li>
+            <li>Espacio coworking de industrias creativas</li>
+        </ul>
+        </div>        
+        
+
+    <!-- SECCION ODS
+      -->
+        <div class="ods-container" data-aos="fade-up">
+            <div class="titods">
+                <h1>La agenda 2030 es nuestro compromiso, hace click y conocelas:</h1>
+            </div>
+            <div class="ods-section">            
+                <div class="ods-slider">
+                    <div class="ods-track" data-aos="fade-up">
+                        <a href="https://www.undp.org/es/sustainable-development-goals/energia-asequible-no-contaminante" target="_blank"><img src="ods7.webp" alt="Objetivos de desarrollo sustentable 7" class="ods-img"  data-aos="flip-left"></a>
+                        <a href="https://www.undp.org/es/sustainable-development-goals/trabajo-decente-crecimiento-economico" target="_blank"><img src="ods8.webp" alt="Objetivos de desarrollo sustentable 8" class="ods-img"  data-aos="flip-left"></a>
+                        <a href="https://www.undp.org/es/sustainable-development-goals/industria-innovacion-infraestructura" target="_blank"><img src="ods9.webp" alt="Objetivos de desarrollo sustentable 9" class="ods-img"  data-aos="flip-left"></a>
+                        <a href="https://www.undp.org/es/sustainable-development-goals/produccion-consumo-responsables" target="_blank"><img src="ods12.webp" alt="Objetivos de desarrollo sustentable 12" class="ods-img"  data-aos="flip-left"></a>
+                        <a href="https://www.undp.org/es/sustainable-development-goals/accion-por-el-clima" target="_blank"><img src="ods13.webp" alt="Objetivos de desarrollo sustentable 13" class="ods-img"  data-aos="flip-left"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>       
+        
+    <!-- SECCION VIDEO INSITUCIONAL -->
+
+    <section class="video-section" >
+        <h2 data-aos="fade-up">¡A la vanguardia industrial!</h2>
+            <div class="video-wrapper" data-aos="flip-right">
+                <iframe  width="560" height="315" src="https://www.youtube.com/embed/UaoBUAToqgY?si=bNpCgMpdVb7gBul_" 
+                        frameborder="0" 
+                        allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture" 
+                        data-aos="fade-up" 
+                        allowfullscreen>
+                </iframe>
+            </div>       
+    </section>  
+    
+    <!-- BANNER PROYECTATE U OTRO -->
+
+    <section class="proyectate-section" data-aos="fade-up">
+        <div class="logo-container">            
+            <a href="tu_url_destino" target="_blank">
+                <img src="proyectate.webp" alt="Proyectate">                
+            </a>
+            <h2>INSCRIPCIONES ABIERTAS</h2>
+            <p>Desdee el 22 de mayo al 14 de junio</p>
+            <!-- <a href="proyectos.html" class="proyect-button">Proyectos</a> -->
+        </div>
+    </section>    
+
+    <!-- PROYECTOS FUTUROS -->
+
+    <section id="proyectos" class="proyect-section" data-aos="fade-up">
+        <h2>Nuestros Proyectos</h2>
+        <p>Descubre los proyectos actuales y futuros del PIIP, ¡entra y conoce nuestro plan de innovación en acción!</p>
+        <a href="proyectos/proyectos.html" class="proyect-button" target="_blank">Proyectos</a>
+    </section>
+
+    <!-- OFERTA LABORAL -->
+
+    <section class="oferta-section" data-aos="fade-up">
+        <h2>Bolsa de Trabajo</h2>
+        <p>Descubre las oportunidades laborales en las empresas del parque industrial</p>
+        <a href="Oferta laboral/oferta laboral.html" class="oferta-button" target="_blank">Ofertas</a>
+    </section>
+
+    <!-- IMAGEN DESCRIPTIVA -->
+
+    <section class="image-section" data-aos="fade-up">
+        <h2 data-aos="fade-right">El ambiente propicio para que tú empresa crezca</h2>
+        <img src="descriptiva.webp" alt="fotografia del parque industrial y de la innovacion posadas">        
+        <!-- <p>Descripción de la sección...</p> -->
+    </section>        
+
+    <!-- IMAGEN  PRE-FOOTER -->
+
+    <section>
+        <img src="fot.webp" alt="Parque Industrial y de la Innovacion Posadas" class="full-width" data-aos="fade-up">
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-center" data-aos="fade-up">
+            <h3>ÚNETE A LA REVOLUCIÓN</h3>
+            <p>Si queres ser parte de esta revolución<br>¡industrial inicia tu proceso de radicación ya!</p>
+            <a href="Radicacion/radicacion.html" class="radicacion-button2" target="_blank">RADICACIÓN</a>
+        </div>
+        
+        <div class="footer-divider" data-aos="fade-up"></div>
+
+        <div id="contact" class="footer-contact" data-aos="fade-up">
+            <p>Whatsapp: <a href="https://wa.me/5493765393074" target="_blank">0376-5393074</a></p>
+            <p>E-mail: <a href="mailto:info@piip.misiones.gob.ar">info@piip.misiones.gob.ar</a></p>
+            <p>Dirección: Calle 62 y 229 - Paraje Nemesio Parma | Posadas</p>
+        </div>       
+
+        <div class="footer-icons" data-aos="fade-up">
+            <a href="https://www.facebook.com/PIIPmisiones/" target="_blank"><span><img src="face.webp" alt="Facebook del Parque Industrial de la Innovacion Posadas"></span></a>
+            <a href="https://x.com/PIIPmisiones" target="_blank"><span><img src="link.webp" alt="Twitter X del Parque Industrial de la Innovacion Posadas"></span></a>
+            <a href="https://www.linkedin.com/company/piipmisiones/mycompany" target="_blank"><span><img src="x.webp" alt="Linkedin del Parque Industrial de la Innovacion Posadas"></span></a>
+        </div>
+
+    <!-- GOOGLE MAP -->
+
+        <section id="mapa" data-aos="fade-up">
+        
+            <iframe id="framemap" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1406.1142550122186!2d-55.99217165107166!3d-27.36990614698011!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sus!4v1716489607390!5m2!1ses!2sus" 
+                
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+                
+            </iframe>
+        </section>
+
+    <!-- LOGO PROVINCIA -->
+
+        <div class="logos-insitucionales" data-aos="fade-up">
+           
+            <a href="https://misiones.gob.ar/" target="_blank" class="prov-icon">
+                <span><img src="logo-misiones.webp" alt="Provincia de Misiones"></span>
+            </a>
+        
+        </div>
+
+    <!-- DERECHOS DE AUTOR -->
+        
+        <div class="footer-bottom" data-aos="fade-up">
+            <p> PIIP © 2024 - POWERADE <a href="https://laiondi.github.io/leandroullon/" target="_blank" >LAION</a></p>
+        </div>
+
+    </footer>
+
+    <!-- BOTON SUBIR AL INICIO -->
+
+    <button id="back-to-top-btn" title="Volver arriba">↑</button>
+
+    <!-- BOTON WHATSAPP -->
+    <a href="https://wa.me/3765393074" class="whatsapp-button" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Parque Industrial y de la Innovación Posadas">
+    </a>
+
+    <!-- SCRIPT QUE DEBEN ESTAR A LO ULTIMO -->
+    
+    <!-- AOS Y JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- script funciones -->
+    <script src="script.js"></script>
+    <script>
+            AOS.init({
+                duration: 1200,
+            });
+    </script>
+
+</body>
+</html>
